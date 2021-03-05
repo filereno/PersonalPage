@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Icon from '../components/SvgSprites'
+import Icon from '../SvgSprites'
 
 const Footer = () => {
 	

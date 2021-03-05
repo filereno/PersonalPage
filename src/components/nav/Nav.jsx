@@ -10,19 +10,15 @@ const Nav = () => {
 					
 				</li>
 				<li>
-					<h4><a href="#technologies">Tecnologias</a></h4>
+					<h4><a href="#tecnology">Tecnologias</a></h4>
 					
 				</li>
 				<li>
-					<h4><a href="#testimonials">Testemunhos</a></h4>
+					<h4><a href="#testimony">Testemunhos</a></h4>
 					
 				</li>
 				<li>
-					<h4><a href="#team">Equipe</a></h4>
-					
-				</li>
-				<li>
-					<h4><a href="#contacts">Contatos</a></h4>
+					<h4><a href="#contact">Contato</a></h4>
 					
 				</li>
 			</ul>

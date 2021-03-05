@@ -1,7 +1,8 @@
 import React from 'react';
-import Icon from '../components/SvgSprites'
+import Icon from '../SvgSprites'
 
-const MainTec = props => {
+
+const Tecnology = props => {
 
 	return (
 		<div>
@@ -10,8 +11,9 @@ const MainTec = props => {
 			</div>
 			
 			<div>
-				<img src={props.image} width="400px" height="400"  alt="drone"/>
+				<img src={props.image} width="640px" height="400px"  alt="drone"/>
 			</div>
+
 
 			<h2>{props.tittle}</h2>
 			<p>{props.text}</p>
@@ -19,4 +21,4 @@ const MainTec = props => {
 	);
 };
 		    
-export default MainTec;
+export default Tecnology;
