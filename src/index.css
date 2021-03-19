@@ -1,34 +1,4 @@
 @font-face {
-	font-family: "RobotoRegular";
-	src: local("RobotoRegular"), url("./fonts/Roboto-Regular.ttf") format("truetype");
-	font-weight: normal;
-}
-@font-face {
-	font-family: "RobotoThin";
-	src: local("RobotoThin"), url("./fonts/Roboto-Thin.ttf") format("truetype");
-	font-weight: normal;
-}
-@font-face {
-	font-family: "RobotoBold";
-	src: local("RobotoBold"), url("./fonts/Roboto-Bold.ttf") format("truetype");
-	font-weight: normal;
-}
-@font-face {
-	font-family: "RobotoMedium";
-	src: local("RobotoMedium"), url("./fonts/Roboto-Medium.ttf") format("truetype");
-	font-weight: normal;
-}
-@font-face {
-	font-family: "RobotoBlack";
-	src: local("RobotoBlack"), url("./fonts/Roboto-Black.ttf") format("truetype");
-	font-weight: normal;
-}
-@font-face {
-	font-family: "RobotoLight";
-	src: local("RobotoLight"), url("./fonts/Roboto-Light.ttf") format("truetype");
-	font-weight: normal;
-}
-@font-face {
 	font-family: "ProximaNovaBlack";
 	src: local("ProximaNovaBlack"), url("./fonts/ProximaNova-Black.otf") format("OpenType");
 	font-weight: normal;
@@ -55,6 +25,7 @@
 	border: 0;
 	box-sizing: border-box;
 	font-family: ProximaNovaRegular;
+	color: #051e50;
 
 }
 

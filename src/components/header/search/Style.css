@@ -1,0 +1,83 @@
+/*
+Search start
+*/
+.containermain > header > div:nth-child(2) {
+	grid-area: search;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	padding-right: 5px;
+}
+.containermain > header > div:nth-child(2) > div:nth-child(1) {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(210, 56, 108);
+}
+.containermain > header > div:nth-child(2) > div:nth-child(1) > label:nth-child(2) {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#switch-search {
+	display: none;
+}
+.containermain > header:nth-child(1) > div:nth-child(2) > form:nth-child(2) {
+
+	border: 3px solid violet;
+	height: 40px;
+	width: 290px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	z-index: 1;
+	position: fixed;
+	top: 55px;
+
+}
+.containermain > header:nth-child(1) > div:nth-child(2) > form:nth-child(2) > button:nth-child(2) {
+	width: 90px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border-left: 1px solid violet;
+	padding-left: 5px;
+}
+.containermain > header > div:nth-child(2) > form > button:hover {
+	background-color: violet;
+}
+	
+.containermain > header > div:nth-child(2) > form > button > svg > use {
+	fill: #051e50;
+}
+#search {
+	outline: none;
+	width: 200px;
+	height: 100%;
+}
+.containermain > header > div:nth-child(2) > form > input:focus {
+	cursor: text;
+	
+}
+.containermain > header > div:nth-child(2) > form > button > svg {
+	width: 100%;
+	height: 100%;
+}
+.icon-loupe > use {
+	fill: white;
+}
+/*
+Serch end
+*/
+@media screen and (min-width: 900px) {
+	.containermain > header > div:nth-child(2) > form {
+		width: 300px;
+	}
+
+
+}

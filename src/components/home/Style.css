@@ -1,0 +1,267 @@
+/************** Main Home start***************/
+
+
+/*Testemunhos start*/
+#testimony {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+#testimony > h1:nth-child(1) {
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-family: ProximaNovaBlack;
+	text-align: center;
+}
+.slider {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.slider > div {
+	max-width: 95%;
+	height: 400px;
+	display: none;
+	box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+	padding: 5px;
+}
+div.active {
+	display: block;
+  	animation: fadeImg 0.8s;
+	display: grid;
+	grid-template-columns: 110px auto;
+	grid-template-rows: auto auto;
+}
+@keyframes fadeImg {
+	from {
+	  opacity: 0;
+	}
+    
+	to {
+	  opacity: 1;
+	}
+}
+div.img > img {
+	width: 100px;
+	border-radius: 50%;
+	grid-column: 1;
+	grid-row: 2;
+	justify-self: center;
+	align-self: center;	
+}
+div.img > div:nth-child(3) {
+	grid-column: 2;
+	grid-row: 2;
+	color: #051e50;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+div.img > div:nth-child(3) > h5:nth-child(1) {
+	grid-row: 1;
+	align-self: flex-end;	
+	font-family: ProximaNovaBold;
+} 
+div.img > div:nth-child(3) > h5:nth-child(2) {
+	grid-row: 2;
+	align-self: flex-start;	
+}
+div.img > p {
+	grid-column: 1/-1;
+	grid-row: 1;
+	align-self: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #051e50;
+}
+
+.previous, .next {
+	height: 50px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.previous > span, .next > span {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(210, 56, 108);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.slide-nav > ul {
+	list-style: none;
+  	margin: 0;
+  	padding: 0;
+  	display: flex;
+  	justify-content: center;
+}
+li.arrow {
+	margin: 0 0;
+	padding-top: 15px;
+	width: 100%;
+	display: flex;
+  	flex: 2;
+	flex: 0 0 0%;
+}
+.icon-next > use, .icon-previous > use {
+	fill: white;
+}
+.previous > span > i, .next > span > i {
+	margin: 0 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.previous > span:hover .icon-previous > use, 
+.next > span:hover .icon-next > use,
+.previous > span:hover, 
+.next > span:hover {
+	fill: rgb(210, 56, 108);
+	background-color: white;
+	border: 1px dotted rgb(210, 56, 108);
+}
+/*Testemunhos end*/
+
+/*Formulario de contato start*/
+
+/* #contact > div {
+	display: flex;
+	flex-direction: column;
+}
+#contact > div > h1 {
+	display: flex;
+	height: 50px;
+	font-size: xx-large;
+	font-family: ProximaNovaBold;
+	color: #051e50;
+	display: flex;
+	justify-content: center;
+}
+#contact > div > form {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 5fr 1fr;
+	grid-template-areas: 
+	"name"
+	"email"
+	"date"
+	"subject"
+	"message"
+	"button"
+	;
+	padding: 15px;
+	grid-gap: 20px;
+}
+div.form-group {
+	display: flex;
+	flex-direction: column;
+}
+div.form-group:nth-child(1) {
+	grid-area: name;
+}
+div.form-group:nth-child(2) {
+	grid-area:email;
+}
+div.form-group:nth-child(3) {
+	grid-area: subject;
+}
+div.form-group:nth-child(4) {
+	grid-area: date;
+}
+div.form-group:nth-child(5) {
+	grid-area: message;
+}
+div.form-group:nth-child(6) {
+	grid-area: button;
+}
+#nome, #email, #subject, #date, #message {
+	border: 1px solid #051e50;
+	border-radius: 5px;
+	height: 30px;
+	padding-left: 10px;
+	outline: none;
+
+}
+#nome:focus, #email:focus, #subject:focus, #message:focus {
+	border: 1px solid rgb(210, 56, 108);
+}
+
+#message {
+	border: 1px solid #051e50;
+	border-radius: 5px;
+	height: 100%;
+}
+div.form-group > label {
+	height: 30px;
+	color: #4d5a75;
+
+}
+#contact > div > form > button {
+	width: 90px;
+	height: 50px;
+	color:white;
+	font-family: ProximaNovaBold;
+	font-size: large;
+	padding: 0;
+	margin: 0 auto;
+	background-color: rgb(210, 56, 108);
+	border-radius: 5px;
+	cursor: pointer;
+}
+#contact > div > form > button:hover {
+
+	border: 1px dotted rgb(210, 56, 108);
+	color: rgb(210, 56, 108);
+	background-color: white;
+}
+#message {
+	resize: vertical;
+}
+.invalid-name {
+	color: rgba(255, 0, 0, 0.57);
+	font-style: italic;
+	font-size: small;
+}
+.invalid {
+	border-color: rgba(255, 0, 0, 0.57);
+}
+.invalid:focus {
+	border-color: rgba(255, 0, 0, 0.57);
+	box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.57);
+} */
+/*Formulario de contato end*/
+/************** Main Home end***************/
+
+@media screen and (min-width: 700px){
+	.slider > div {
+		max-width: 95%;
+		height: 400px;
+	}	
+}
+
+@media screen and (min-width: 900px) {
+	/* #contact > div > form {
+
+		grid-template-rows: 1fr 1fr 5fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"name email"
+		"date subject"
+		"message message"
+		"button button"
+		;	
+	}
+	#contact > div > form > button {
+		margin-left: 0;
+	} */
+	/*Testemunhos start*/
+	.slider > div {
+		max-width: 100%;
+		height: 400px;
+	}
+	/*Testemunhos end*/
+
+}

@@ -1,30 +1,24 @@
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {BrowserRouter as Switch, Route, BrowserRouter} from 'react-router-dom';
 
 import './App.css';
-import Nav from './components/nav/Nav';
-import Menu from './components/menu/Menu';
-import Hero from './components/hero/Hero';
-import Aside from './components/aside/Aside';
-import Main from './components/main/Main';
-import Footer from './components/footer/Footer';
+import './components/about/Style.css'
+import './components/home/Style.css'
+import './components/tecnology/Style.css'
+import './components/header/logo/Style.css'
+import './components/header/search/Style.css'
+import './components/header/menu/Style.css'
+import './components/header/hero/Style.css'
+import './components/footer/Style.css'
+import './components/contact/Style.css'
+import './components/tutorials/Style.css'
+
+import Routers from './components/routers/Routers'
+
 
 function App() {
   return (
-	<Router>
-		<div className="containermain">
-			<header>
-				<Menu/>
-				<Nav/>
-			</header>
-			<header>
-				<Hero/>
-			</header>
-			<Aside/>
-			<Aside/>
-			<Main/>
-			<Footer/>
-		</div>
-	</Router>
+		
+	<Routers/>
   );
 }
 

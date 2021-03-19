@@ -1,0 +1,124 @@
+/*Formulario de contato start*/
+.contact {
+	grid-template-columns: auto;
+}
+.contact > div {
+	display: flex;
+	flex-direction: column;
+}
+.contact > div > h1 {
+	display: flex;
+	height: 50px;
+	font-size: xx-large;
+	font-family: ProximaNovaBold;
+	color: #051e50;
+	display: flex;
+	justify-content: center;
+}
+.contact > div > form {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 5fr 1fr;
+	grid-template-areas: 
+		"name"
+		"email"
+		"date"
+		"subject"
+		"message"
+		"button"
+	;
+	padding: 15px;
+	grid-gap: 20px;
+}
+.contact > div > form > div {
+	display: flex;
+	flex-direction: column;
+}
+.contact > div:nth-child(1) > form:nth-child(2) > div:nth-child(1) {
+	grid-area: name;
+}
+div.form-group:nth-child(2) {
+	grid-area:email;
+}
+div.form-group:nth-child(3) {
+	grid-area: subject;
+}
+div.form-group:nth-child(4) {
+	grid-area: date;
+}
+div.form-group:nth-child(5) {
+	grid-area: message;
+}
+.contact > div:nth-child(1) > form:nth-child(2) > button:nth-child(6) {
+	grid-area: button;
+}
+#nome, #email, #subject, #date, #message {
+	border: 1px solid #051e50;
+	border-radius: 5px;
+	height: 30px;
+	padding-left: 10px;
+	outline: none;
+
+}
+#nome:focus, #email:focus, #subject:focus, #message:focus {
+	border: 1px solid rgb(210, 56, 108);
+}
+
+#message {
+	border: 1px solid #051e50;
+	border-radius: 5px;
+	height: 100%;
+	resize: vertical;
+}
+.contact > div > form > div > label {
+	height: 30px;
+	color: #4d5a75;
+
+}
+.contact > div > form > button {
+	width: 90px;
+	height: 50px;
+	color:white;
+	font-family: ProximaNovaBold;
+	font-size: large;
+	padding: 0;
+	margin: 0 auto;
+	background-color: rgb(210, 56, 108);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.contact > div > form > button:hover {
+
+	border: 1px dotted rgb(210, 56, 108);
+	color: rgb(210, 56, 108);
+	background-color: white;
+}
+.invalid-name {
+	color: rgba(255, 0, 0, 0.57);
+	font-style: italic;
+	font-size: small;
+}
+.invalid {
+	border-color: rgba(255, 0, 0, 0.57);
+}
+.invalid:focus {
+	border-color: rgba(255, 0, 0, 0.57);
+	box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.57);
+}
+
+@media screen and (min-width: 900px) {
+	.contact > div > form {
+
+		grid-template-rows: 1fr 1fr 5fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"name email"
+			"date subject"
+			"message message"
+			"button button"
+		;	
+	}
+	.contact > div > form > button {
+		margin-left: 0;
+	}
+}
+/*Formulario de contato end*/

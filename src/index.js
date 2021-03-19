@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 
 import './index.css';
 import App from './App';
+
 import './fonts/Roboto-Regular.ttf'
 import './fonts/Roboto-Thin.ttf'
 import './fonts/Roboto-Medium.ttf'
